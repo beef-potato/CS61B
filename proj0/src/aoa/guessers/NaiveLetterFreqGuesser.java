@@ -21,6 +21,7 @@ public class NaiveLetterFreqGuesser implements Guesser {
      *  This task is similar to something you did in hw0b! */
     public Map<Character, Integer> getFrequencyMap() {
         // TODO: Fill in this method.
+
         return null;
     }
 
