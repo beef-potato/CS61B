@@ -1,2 +1,3 @@
-package aoa.guessers;public class GuessHelper {
+package aoa.guessers;
+public class GuessHelper {
 }

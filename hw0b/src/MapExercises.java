@@ -33,9 +33,7 @@ public class MapExercises {
     /** Returns a map of the counts of all words that appear in a list of words. */
     public static Map<String, Integer> countWords(List<String> words) {
         Map<String, Integer> map = new TreeMap<>();
-//        List<String> uniqueWords = new ArrayList<>();
 
-        //todo : fix the map method.
         for (String elem: words){
 //            if the map has elem as key.
             if (map.containsKey(elem)){
