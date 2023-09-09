@@ -23,7 +23,6 @@ public class NaiveLetterFreqGuesser implements Guesser {
     /** Returns a map from a given letter to its frequency across all words.
      *  This task is similar to something you did in hw0b! */
     public Map<Character, Integer> getFrequencyMap() {
-        // TODO: Fill in this method.
         Map<Character, Integer> freqMap = new TreeMap<>();
 
         for (String word : words){
@@ -43,7 +42,23 @@ public class NaiveLetterFreqGuesser implements Guesser {
      *  (and therefore isn't present in GUESSES). */
     public char getGuess(List<Character> guesses) {
         // TODO: Fill in this method.
-        return '?';
+        Map<Character, Integer> freqMap = getFrequencyMap();
+        int maxNum = 0;
+        char maxChar = 'a';
+
+        if (freqMap != null) {
+            for (char c : freqMap.keySet()){
+                if (guesses.contains(c)){
+                }else {
+                    if (freqMap.get(c) > maxNum){
+                        maxNum = freqMap.get(c);
+                        maxChar = c;
+                    }
+                }
+            }
+            return maxChar;
+        }
+            return '?';
     }
 
     public static void main(String[] args) {
